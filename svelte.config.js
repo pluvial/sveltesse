@@ -16,6 +16,12 @@ const config = {
 
 	kit: {
 		adapter: auto ? adapterAuto() : adapterStatic()
+	},
+
+	vitePlugin: {
+		experimental: {
+			inspector: true
+		}
 	}
 };
 
