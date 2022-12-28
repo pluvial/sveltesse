@@ -1,9 +1,11 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import autoImport from 'unplugin-auto-import/vite';
+import components from 'unplugin-svelte-components/vite';
 
 /** @type {import('vite').UserConfig} */
 const config = {
 	plugins: [
+		components({ dirs: ['src/components'], dts: 'src/components.d.ts' }),
 		sveltekit(),
 		autoImport({
 			imports: [

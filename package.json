@@ -8,8 +8,8 @@
 		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
 		"preview": "vite preview",
 		"test": "playwright test",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --compiler-warnings missing-declaration:ignore",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --compiler-warnings missing-declaration:ignore --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
@@ -35,6 +35,7 @@
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.3",
 		"unplugin-auto-import": "^0.12.1",
+		"unplugin-svelte-components": "^0.2.4",
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
