@@ -1,5 +1,7 @@
 <script>
+	import '@unocss/reset/tailwind.css';
 	import './styles.css';
+	import 'uno.css';
 </script>
 
 <div class="app">

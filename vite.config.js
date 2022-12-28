@@ -1,4 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import unocss from 'unocss/vite';
 import autoImport from 'unplugin-auto-import/vite';
 import components from 'unplugin-svelte-components/vite';
 
@@ -6,6 +7,7 @@ import components from 'unplugin-svelte-components/vite';
 const config = {
 	plugins: [
 		components({ dirs: ['src/components'], dts: 'src/components.d.ts' }),
+		unocss(),
 		sveltekit(),
 		autoImport({
 			imports: [
