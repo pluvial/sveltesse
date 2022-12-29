@@ -55,5 +55,6 @@ declare global {
 	const spring: typeof import('svelte/motion')['spring'];
 	const tick: typeof import('svelte')['tick'];
 	const tweened: typeof import('svelte/motion')['tweened'];
+	const useCounter: typeof import('./lib/counter')['useCounter'];
 	const writable: typeof import('svelte/store')['writable'];
 }

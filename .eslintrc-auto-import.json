@@ -54,6 +54,7 @@
 		"spring": true,
 		"tick": true,
 		"tweened": true,
+		"useCounter": true,
 		"writable": true
 	}
 }

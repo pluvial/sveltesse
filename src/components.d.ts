@@ -2,7 +2,8 @@
 // We suggest you to commit this file into source control
 declare global {
 	const Counter: typeof import('./components/Counter.svelte')['default'];
-	const Header: typeof import('./components/Header.svelte')['default'];
+	const Footer: typeof import('./components/Footer.svelte')['default'];
+	const Input: typeof import('./components/Input.svelte')['default'];
 }
 
 export {};

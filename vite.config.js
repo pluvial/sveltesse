@@ -10,6 +10,7 @@ const config = {
 		unocss(),
 		sveltekit(),
 		autoImport({
+			dirs: ['src/lib'],
 			imports: [
 				'svelte',
 				'svelte/animate',
@@ -18,7 +19,7 @@ const config = {
 				'svelte/store',
 				'svelte/transition'
 			],
-			dts: './src/auto-imports.d.ts',
+			dts: 'src/auto-imports.d.ts',
 			eslintrc: { enabled: true }
 		})
 	],
