@@ -1,58 +1,34 @@
-<script>
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+<script lang="ts">
+	import { goto } from '$app/navigation';
+
+	let name: string;
+
+	function go() {
+		if (name) {
+			goto(`/hi/${encodeURIComponent(name)}`);
+		}
+	}
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+<div>
+	<div i-carbon-campsite text-4xl inline-block />
+	<p>
+		<a rel="noreferrer" href="https://github.com/pluvial/sveltesse" target="_blank"> Sveltesse </a>
+	</p>
+	<p>
+		<em text-sm op75>Opinionated SvelteKit Starter Template</em>
+	</p>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+	<div py-4 />
 
-		to your new<br />SvelteKit app
-	</h1>
+	<Input
+		bind:value={name}
+		placeholder="What's your name?"
+		autocomplete="false"
+		on:keydown={({ code }) => code === 'Enter' && go()}
+	/>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
+	<div>
+		<button class="m-3 text-sm btn" disabled={!name} on:click={go}>Go</button>
+	</div>
+</div>
