@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let initial: number;
+	import type { Props } from './Counter.svelte';
+
+	type $$Props = Props;
+
+	export let initial: $$Props['initial'];
 
 	const { count, inc, dec } = useCounter(initial);
 </script>

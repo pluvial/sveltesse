@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let count: number;
+	import type { Props } from './Hello.svelte';
+
+	type $$Props = Props;
+
+	export let count: $$Props['count'];
 
 	let times = 2;
 

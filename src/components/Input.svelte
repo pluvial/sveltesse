@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let value: string = '';
+	import type { Props } from './Input.svelte';
+
+	type $$Props = Props;
+
+	export let value: $$Props['value'] = '';
 </script>
 
 <input
