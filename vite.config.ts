@@ -10,8 +10,8 @@ export default {
 		// https://github.com/Mohamed-Kaizen/unplugin-svelte-components
 		components({
 			dirs: ['src/lib/components'],
-			dts: 'src/components.d.ts',
-			// dts: false,
+			// dts: 'src/components.d.ts',
+			dts: false,
 			// do not consider histoire story components
 			exclude: [/\.story\.svelte$/],
 		}),
@@ -37,8 +37,12 @@ export default {
 				'svelte/store',
 				'svelte/transition',
 			],
-			dts: 'src/auto-imports.d.ts',
-			eslintrc: { enabled: true },
+			// dts: 'src/auto-imports.d.ts',
+			dts: false,
+			eslintrc: {
+				// enabled: true,
+				enabled: false,
+			},
 		}),
 		// https://github.com/antfu/vite-plugin-inspect
 		// visit http://localhost:5173/__inspect/ to see the inspector
