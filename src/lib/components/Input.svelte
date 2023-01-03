@@ -11,10 +11,5 @@
 	{...$$restProps}
 	on:keydown
 	type="text"
-	p="x-4 y-2"
-	w="250px"
-	text="center"
-	bg="transparent"
-	border="~ rounded gray-200 dark:gray-700"
-	outline="none active:none"
+	class="p-x-4 p-y-2 w-250px text-center bg-transparent border border-rounded border-gray-200 dark:border-gray-700 outline-none active:outline-none"
 />

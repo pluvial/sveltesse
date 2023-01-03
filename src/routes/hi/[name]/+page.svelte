@@ -4,11 +4,11 @@
 </script>
 
 <div>
-	<div i-carbon-pedestrian text-4xl inline-block />
+	<div class="i-carbon-pedestrian text-4xl inline-block" />
 	<p>
 		Hi, {$page.params.name}
 	</p>
-	<p text-sm op50>
+	<p class="text-sm op50">
 		<em>Dynamic route!</em>
 	</p>
 

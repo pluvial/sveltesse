@@ -6,7 +6,7 @@
 	// import 'uno.css'
 </script>
 
-<main font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
+<main class="font-sans p-x-4 p-y-10 text-center text-gray-700 dark:text-gray-200">
 	<slot />
 	<Footer />
 </main>
