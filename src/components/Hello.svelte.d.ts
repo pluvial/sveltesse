@@ -1,7 +1,7 @@
-import { SvelteComponentTyped } from 'svelte';
+import { SvelteComponentTyped } from 'svelte'
 
 export type Props = {
-	count: number;
-};
+	count: number
+}
 
 export default class Hello extends SvelteComponentTyped<Props> {}

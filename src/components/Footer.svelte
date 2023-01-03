@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { Props } from './Footer.svelte';
+	import type { Props } from './Footer.svelte'
 
-	type $$Props = Props;
+	type $$Props = Props
 
 	function toggleDark() {
 		// TODO

@@ -1,13 +1,13 @@
-import adapterAuto from '@sveltejs/adapter-auto';
-import adapterNode from '@sveltejs/adapter-node';
-import adapterStatic from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import adapterAuto from '@sveltejs/adapter-auto'
+import adapterNode from '@sveltejs/adapter-node'
+import adapterStatic from '@sveltejs/adapter-static'
+import { vitePreprocess } from '@sveltejs/kit/vite'
 
 const auto =
 	!!process.env.VERCEL ||
 	!!process.env.CF_PAGES ||
 	!!process.env.NETLIFY ||
-	process.env.GITHUB_ACTION_REPOSITORY === 'Azure/static-web-apps-deploy';
+	process.env.GITHUB_ACTION_REPOSITORY === 'Azure/static-web-apps-deploy'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -24,6 +24,6 @@ const config = {
 			inspector: true,
 		},
 	},
-};
+}
 
-export default config;
+export default config

@@ -1,7 +1,7 @@
-import { SvelteComponentTyped } from 'svelte';
+import { SvelteComponentTyped } from 'svelte'
 
 export type Props = {
-	initial: number;
-};
+	initial: number
+}
 
 export default class Counter extends SvelteComponentTyped<Props> {}

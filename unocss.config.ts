@@ -1,4 +1,4 @@
-import { extractorSvelte } from '@unocss/core';
+import { extractorSvelte } from '@unocss/core'
 import {
 	defineConfig,
 	presetAttributify,
@@ -7,7 +7,7 @@ import {
 	presetWebFonts,
 	// transformerDirectives,
 	// transformerVariantGroup
-} from 'unocss';
+} from 'unocss'
 
 // adapted from https://github.com/unocss/unocss/tree/main/examples/sveltekit
 export default defineConfig({
@@ -58,4 +58,4 @@ export default defineConfig({
 	//   transformerDirectives(),
 	//   transformerVariantGroup(),
 	// ],
-});
+})

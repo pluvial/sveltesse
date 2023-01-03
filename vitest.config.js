@@ -1,4 +1,4 @@
-import baseConfig from './vite.config';
+import baseConfig from './vite.config'
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -8,6 +8,6 @@ const config = {
 		globals: true,
 		environment: 'jsdom',
 	},
-};
+}
 
-export default config;
+export default config

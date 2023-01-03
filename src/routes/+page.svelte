@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
+	import { goto } from '$app/navigation'
 
-	let name: string;
+	let name: string
 
 	function go() {
 		if (name) {
-			goto(`/hi/${encodeURIComponent(name)}`);
+			goto(`/hi/${encodeURIComponent(name)}`)
 		}
 	}
 </script>

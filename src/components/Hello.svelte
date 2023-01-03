@@ -1,13 +1,13 @@
 <script lang="ts">
-	import type { Props } from './Hello.svelte';
+	import type { Props } from './Hello.svelte'
 
-	type $$Props = Props;
+	type $$Props = Props
 
-	export let count: $$Props['count'];
+	export let count: $$Props['count']
 
-	let times = 2;
+	let times = 2
 
-	$: result = count * times;
+	$: result = count * times
 </script>
 
 <div>{count} x {times} = {result}</div>
