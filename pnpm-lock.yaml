@@ -31,6 +31,7 @@ specifiers:
   unplugin-auto-import: ^0.12.1
   unplugin-svelte-components: ^0.2.4
   vite: ^4.0.0
+  vite-plugin-inspect: ^0.7.12
   vitest: ^0.25.3
 
 devDependencies:
@@ -64,6 +65,7 @@ devDependencies:
   unplugin-auto-import: 0.12.1
   unplugin-svelte-components: 0.2.4
   vite: 4.0.3
+  vite-plugin-inspect: 0.7.12_vite@4.0.3
   vitest: 0.25.8_lae363bjhdipllr6jstkmuhhna
 
 packages:
@@ -1753,6 +1755,15 @@ packages:
       mime-types: 2.1.35
     dev: true
 
+  /fs-extra/11.1.0:
+    resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
+    engines: {node: '>=14.14'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
@@ -2219,6 +2230,14 @@ packages:
 
   /jsonc-parser/3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
+    dev: true
+
+  /jsonfile/6.1.0:
+    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+    dependencies:
+      universalify: 2.0.0
+    optionalDependencies:
+      graceful-fs: 4.2.10
     dev: true
 
   /kleur/4.1.5:
@@ -3167,6 +3186,11 @@ packages:
     engines: {node: '>= 4.0.0'}
     dev: true
 
+  /universalify/2.0.0:
+    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
+    engines: {node: '>= 10.0.0'}
+    dev: true
+
   /unocss/0.48.0_vite@4.0.3:
     resolution: {integrity: sha512-rDyMHyvRTRUPOd406CzgoYfiQ4tzN/TGU++jFTDzLsJ9Unuwf/pBBclP6z6aqt5eRBoEOEMqrJJwm9QN7aeYdA==}
     engines: {node: '>=14'}
@@ -3262,6 +3286,24 @@ packages:
     dependencies:
       querystringify: 2.2.0
       requires-port: 1.0.0
+    dev: true
+
+  /vite-plugin-inspect/0.7.12_vite@4.0.3:
+    resolution: {integrity: sha512-hI093vkhCVkDW9rnss+iJZ6mgCKKIZNcV0QJ2qnfzn15s67+WQcKK5byBTZEbfx2MBzMJInYsQfWiLdScgneIg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      vite: ^3.1.0 || ^4.0.0
+    dependencies:
+      '@rollup/pluginutils': 5.0.2
+      debug: 4.3.4
+      fs-extra: 11.1.0
+      kolorist: 1.6.0
+      sirv: 2.0.2
+      ufo: 1.0.1
+      vite: 4.0.3
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /vite/4.0.3:

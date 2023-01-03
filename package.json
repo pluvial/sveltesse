@@ -46,6 +46,7 @@
 		"unplugin-auto-import": "^0.12.1",
 		"unplugin-svelte-components": "^0.2.4",
 		"vite": "^4.0.0",
+		"vite-plugin-inspect": "^0.7.12",
 		"vitest": "^0.25.3"
 	},
 	"type": "module"
