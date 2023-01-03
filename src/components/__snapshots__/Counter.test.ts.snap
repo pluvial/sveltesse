@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`Counter.svelte > should render 1`] = `"<div><div>10 <button class=\\"inc\\">+</button> <button class=\\"dec\\">-</button></div><!--<Counter>--></div>"`;

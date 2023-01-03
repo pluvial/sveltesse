@@ -3,6 +3,7 @@
 declare global {
 	const Counter: typeof import('./components/Counter.svelte')['default'];
 	const Footer: typeof import('./components/Footer.svelte')['default'];
+	const Hello: typeof import('./components/Hello.svelte')['default'];
 	const Input: typeof import('./components/Input.svelte')['default'];
 }
 
