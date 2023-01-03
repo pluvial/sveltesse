@@ -16,14 +16,14 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: auto ? adapterAuto() : process.env.ADAPTER_STATIC ? adapterStatic() : adapterNode()
+		adapter: auto ? adapterAuto() : process.env.ADAPTER_STATIC ? adapterStatic() : adapterNode(),
 	},
 
 	vitePlugin: {
 		experimental: {
-			inspector: true
-		}
-	}
+			inspector: true,
+		},
+	},
 };
 
 export default config;

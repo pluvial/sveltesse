@@ -26,18 +26,18 @@ const config = {
 				'svelte/easing',
 				'svelte/motion',
 				'svelte/store',
-				'svelte/transition'
+				'svelte/transition',
 			],
 			dts: 'src/auto-imports.d.ts',
-			eslintrc: { enabled: true }
+			eslintrc: { enabled: true },
 		}),
 		// https://github.com/antfu/vite-plugin-inspect
 		// visit http://localhost:5173/__inspect/ to see the inspector
-		inspect()
+		inspect(),
 	],
 	test: {
-		include: ['src/**/*.{test,spec}.{js,ts}']
-	}
+		include: ['src/**/*.{test,spec}.{js,ts}'],
+	},
 };
 
 export default config;

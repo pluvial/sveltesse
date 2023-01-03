@@ -8,6 +8,6 @@ export function useCounter(initial: number) {
 		},
 		dec() {
 			count.update((value) => value - 1);
-		}
+		},
 	};
 }

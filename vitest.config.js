@@ -6,8 +6,8 @@ const config = {
 	test: {
 		...baseConfig.test,
 		globals: true,
-		environment: 'jsdom'
-	}
+		environment: 'jsdom',
+	},
 };
 
 export default config;
