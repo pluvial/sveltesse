@@ -4,10 +4,10 @@ export function useCounter(initial: number) {
 	return {
 		count,
 		inc() {
-			count.update((value) => value + 1);
+			count.update(value => value + 1);
 		},
 		dec() {
-			count.update((value) => value - 1);
+			count.update(value => value - 1);
 		},
 	};
 }
