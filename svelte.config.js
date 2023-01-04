@@ -16,7 +16,11 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: auto ? adapterAuto() : process.env.ADAPTER_STATIC ? adapterStatic() : adapterNode(),
+		adapter: auto
+			? adapterAuto()
+			: process.env.ADAPTER_STATIC
+			? adapterStatic({ fallback: 'index.html' })
+			: adapterNode(),
 	},
 
 	vitePlugin: {

@@ -5,6 +5,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"build:package": "svelte-kit sync && svelte-package",
+		"build:static": "ADAPTER_STATIC=1 vite build",
 		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
 		"preview": "vite preview",
 		"test": "playwright test",
