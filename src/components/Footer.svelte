@@ -19,6 +19,6 @@
 		rel="noreferrer"
 		href="https://github.com/pluvial/sveltesse"
 		target="_blank"
-		title="GitHub"
-	/>
+		title="GitHub">GitHub</a
+	>
 </nav>
