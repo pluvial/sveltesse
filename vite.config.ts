@@ -8,7 +8,13 @@ import inspect from 'vite-plugin-inspect'
 export default {
 	plugins: [
 		// https://github.com/Mohamed-Kaizen/unplugin-svelte-components
-		components({ dirs: ['src/components'], dts: 'src/components.d.ts' }),
+		components({
+			dirs: ['src/lib/components'],
+			dts: 'src/components.d.ts',
+			// dts: false,
+			// do not consider histoire story components
+			exclude: [/\.story\.svelte$/],
+		}),
 		// https://github.com/antfu/unocss
 		// see unocss.config.ts for config
 		// visit http://localhost:5173/__unocss/ to see the inspector

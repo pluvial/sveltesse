@@ -9,6 +9,9 @@ const auto =
 	!!process.env.NETLIFY ||
 	process.env.GITHUB_ACTION_REPOSITORY === 'Azure/static-web-apps-deploy'
 
+// exclude stories, tests and snapshots from svelte-package output
+const exclude = [/\.story\.svelte$/, /\.test\.(js|ts)$/, /__snapshots__/]
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
@@ -21,6 +24,10 @@ const config = {
 			: process.env.ADAPTER_STATIC
 			? adapterStatic({ fallback: 'index.html' })
 			: adapterNode(),
+	},
+
+	package: {
+		files: filepath => exclude.every(regex => !regex.test(filepath)),
 	},
 
 	vitePlugin: {
