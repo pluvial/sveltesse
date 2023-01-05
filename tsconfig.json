@@ -27,6 +27,6 @@
 		"tests/**/*.js",
 		"tests/**/*.ts",
 		"tests/**/*.svelte",
-		"src/components.d.ts"
+		"**/*.d.ts"
 	]
 }

@@ -2,10 +2,10 @@ import { sveltekit } from '@sveltejs/kit/vite'
 import unocss from 'unocss/vite'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-svelte-components/vite'
+import type { UserConfig } from 'vite'
 import inspect from 'vite-plugin-inspect'
 
-/** @type {import('vite').UserConfig} */
-const config = {
+export default {
 	plugins: [
 		// https://github.com/Mohamed-Kaizen/unplugin-svelte-components
 		components({ dirs: ['src/components'], dts: 'src/components.d.ts' }),
@@ -38,6 +38,4 @@ const config = {
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}'],
 	},
-}
-
-export default config
+} satisfies UserConfig
