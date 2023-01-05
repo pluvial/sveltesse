@@ -19,8 +19,8 @@ export default {
 		// see unocss.config.ts for config
 		// visit http://localhost:5173/__unocss/ to see the inspector
 		unocss({
-			// mode: 'global',
-			mode: 'svelte-scoped',
+			mode: 'global',
+			// mode: 'svelte-scoped',
 		}),
 		// https://github.com/sveltejs/kit/blob/master/packages/kit/src/exports/vite/index.js
 		// https://github.com/sveltejs/vite-plugin-svelte

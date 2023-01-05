@@ -1,9 +1,13 @@
 <script>
 	// NOTE: uncomment when unocss is in mode: 'global'
-	// import '@unocss/reset/tailwind.css'
+	// NOTE: comment when unocss is in mode: 'svelte-scoped'
+	import '@unocss/reset/tailwind.css'
+
 	import './styles.css'
+
 	// NOTE: uncomment when unocss is in mode: 'global'
-	// import 'uno.css'
+	// NOTE: comment when unocss is in mode: 'svelte-scoped'
+	import 'uno.css'
 </script>
 
 <main font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
@@ -11,5 +15,6 @@
 	<Footer />
 </main>
 
-<!-- NOTE: can be removed when unocss is in mode: 'global' -->
-<style uno:preflights uno:safelist global></style>
+<!-- NOTE: comment when unocss is in mode: 'global' -->
+<!-- NOTE: uncomment when unocss is in mode: 'svelte-scoped' -->
+<!-- <style uno:preflights uno:safelist global></style> -->
