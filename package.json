@@ -32,6 +32,7 @@
 		"@typescript-eslint/eslint-plugin": "^5.48.0",
 		"@typescript-eslint/parser": "^5.48.0",
 		"@unocss/core": "^0.48.0",
+		"@unocss/preset-attributify": "^0.48.0",
 		"@unocss/reset": "^0.48.0",
 		"@vitest/ui": "^0.26.3",
 		"eslint": "^8.31.0",
