@@ -11,13 +11,15 @@
 </script>
 
 <div>
-	<div class="i-carbon-campsite text-4xl inline-block" />
+	<div i-carbon-campsite text-4xl inline-block />
 	<p>
-		<a rel="noreferrer" href="https://github.com/pluvial/sveltesse" target="_blank">Sveltesse</a>
+		<a rel="noreferrer" href="https://github.com/pluvial/sveltesse" target="_blank"> Sveltesse </a>
 	</p>
-	<p><em class="text-sm op75">Opinionated SvelteKit Starter Template</em></p>
+	<p>
+		<em text-sm op75>Opinionated SvelteKit Starter Template</em>
+	</p>
 
-	<div class="py-4" />
+	<div py-4 />
 
 	<Input
 		bind:value={name}
@@ -26,5 +28,7 @@
 		on:keydown={({ code }) => code === 'Enter' && go()}
 	/>
 
-	<div><button class="m-3 text-sm btn" disabled={!name} on:click={go}>Go</button></div>
+	<div>
+		<button m-3 text-sm btn disabled={!name} on:click={go}>Go</button>
+	</div>
 </div>

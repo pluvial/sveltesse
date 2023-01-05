@@ -4,15 +4,15 @@
 </script>
 
 <div>
-	<div class="i-carbon-pedestrian text-4xl inline-block" />
+	<div i-carbon-pedestrian text-4xl inline-block />
 	<p>
 		Hi, {$page.params.name}
 	</p>
-	<p class="text-sm op50">
+	<p text-sm op50>
 		<em>Dynamic route!</em>
 	</p>
 
 	<div>
-		<button class="btn m-3 text-sm mt-8" on:click={() => goto('/')}>Back</button>
+		<button btn m-3 text-sm mt-8 on:click={() => goto('/')}>Back</button>
 	</div>
 </div>
